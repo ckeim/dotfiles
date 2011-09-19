@@ -22,7 +22,7 @@ set hidden
 set wildmenu
 set wildmode=list:longest
 set visualbell
-set cursorline
+"set cursorline
 set ttyfast
 set ruler
 set backspace=indent,eol,start
@@ -60,8 +60,8 @@ set number
 " Disable wordwrap
 set nowrap
 
-set list
-set listchars=tab:▸\ ,eol:¬
+"set list
+"set listchars=tab:▸\ ,eol:¬
 
 "map <S-Enter> O<Esc>
 "map <CR> o<Esc>
@@ -88,6 +88,10 @@ augroup userruby
   au! BufRead,BufNewFile *.ru setfiletype ruby
   au! BufRead,BufNewFile Gemfile setfiletype ruby
   au! BufRead,BufNewFile Capfile setfiletype ruby
+augroup END
+
+augroup userphp
+  au! BufRead,BufNewFile *.ctp setfiletype php
 augroup END
 
 map <leader><tab> :tabn <CR>
