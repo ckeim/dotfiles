@@ -1,0 +1,7 @@
+webroot=/var/www/html/damian.thrillist.com/Thrillist
+themeroot=$webroot/sites/all/themes/thrillist3/
+
+alias cc='compass compile $themeroot'
+alias t3='cd $themeroot'
+alias tl='cd $webroot'
+alias modules='cd $webroot/sites/all/modules'

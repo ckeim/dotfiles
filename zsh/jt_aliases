@@ -1,0 +1,9 @@
+PATH=~camp/bin:$PATH
+
+camp_path=/home/damian/camp30
+app_path=$camp_path/cake_1.3.6/app
+alias jtapp='cd $app_path'
+alias webroot='cd $app_path/webroot'
+
+alias m1='ssh -i ~/jackthreads.pem ubuntu@m1.db.jackthreads.com'
+alias m2='ssh -i ~/jackthreads.pem ubuntu@m2.db.jackthreads.com'

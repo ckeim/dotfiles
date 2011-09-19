@@ -62,14 +62,6 @@ setopt CORRECT CORRECT_ALL
 setopt EXTENDED_GLOB
 
 
-webroot=/var/www/html/damian.thrillist.com/Thrillist
-themeroot=$webroot/sites/all/themes/thrillist3/
-
-alias cc='compass compile $themeroot'
-alias t3='cd $themeroot'
-alias tl='cd $webroot'
-alias modules='cd $webroot/sites/all/modules'
-
 alias tmux='tmux -2'
 
 # name of the branch we are on
@@ -84,3 +76,6 @@ setopt prompt_subst
 PROMPT='%{$fg_bold[green]%}%n@%m %{$fg[blue]%}%c %{$fg_bold[red]%}$(git_prompt_info)%{$fg[blue]%} %% %{$reset_color%}'
 
 alias gs='git status -sb'
+
+. ~/.zsh/tl_aliases
+. ~/.zsh/jt_aliases
